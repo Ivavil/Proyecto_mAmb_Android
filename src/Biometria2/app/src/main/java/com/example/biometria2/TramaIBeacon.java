@@ -4,7 +4,7 @@ package com.example.biometria2;
 import java.util.Arrays;
 
 // -----------------------------------------------------------------------------------
-// @author: Jordi Bataller i Mascarell
+// @author: Ivan Villanueva Villalon
 // -----------------------------------------------------------------------------------
 public class TramaIBeacon {
     private byte[] prefijo = null; // 9 bytes
@@ -23,72 +23,156 @@ public class TramaIBeacon {
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * Prefix getter
+     * getPrefijo() -> [Byte]
+     *
+     *
+     * @return Beacon prefix
+     */
     public byte[] getPrefijo() {
         return prefijo;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * UUID getter
+     * getUUID() -> [Byte]
+     *
+     *
+     * @return Beacon UUID
+     */
     public byte[] getUUID() {
         return uuid;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * Major value getter
+     * getMajor() -> [Byte]
+     *
+     *
+     * @return Beacon major value
+     */
     public byte[] getMajor() {
         return major;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * Minor value getter
+     * getMinor() -> [Byte]
+     *
+     *
+     * @return Beacon minor value
+     */
     public byte[] getMinor() {
         return minor;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * Tx Power getter
+     * getTxPower() -> Byte
+     *
+     *
+     * @return Beacon Tx Power
+     */
     public byte getTxPower() {
         return txPower;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * all Bytes getter
+     * getLosBytes() -> [Byte]
+     *
+     *
+     * @return all the bytes that form the Beacon.
+     */
     public byte[] getLosBytes() {
         return losBytes;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * Adv Flags getter
+     * getAdvFlags() -> [Byte]
+     *
+     *
+     * @return Beacon Adv Flags.
+     */
     public byte[] getAdvFlags() {
         return advFlags;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * Adv Header getter
+     * getAdvHeader() -> [Byte]
+     *
+     *
+     * @return Beacon Adv Header.
+     */
     public byte[] getAdvHeader() {
         return advHeader;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * Company ID getter
+     * getCompanyID() -> Byte
+     *
+     *
+     * @return Company ID.
+     */
     public byte[] getCompanyID() {
         return companyID;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * Beacon type getter
+     * getiBeaconType() -> Byte
+     *
+     *
+     * @return Beacon type
+     */
     public byte getiBeaconType() {
         return iBeaconType;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * Beacon length getter
+     * getiBeaconLength() -> Byte
+     *
+     *
+     * @return Beacon length.
+     */
     public byte getiBeaconLength() {
         return iBeaconLength;
     }
 
     // -------------------------------------------------------------------------------
     // -------------------------------------------------------------------------------
+    /*
+     * The constructor of the class
+     * [Byte] -> TramaIBeacon()
+     *
+     * @param bytes Bytes that form the Beacon data
+     *
+     */
     public TramaIBeacon(byte[] bytes ) {
         this.losBytes = bytes;
 
